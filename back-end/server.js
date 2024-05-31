@@ -4,10 +4,10 @@ const express=require("express")
 const mongoose=require("mongoose")
 const bodyParser=require("body-parser")
 const userRoutes=require("./routes/userRoutes")
-
+const cors=require("cors")
 require("dotenv").config()
 
-const cors=require("cors")
+
 const app=express()
 
 const PORT=3000;
