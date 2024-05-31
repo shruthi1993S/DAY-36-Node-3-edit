@@ -15,7 +15,7 @@ const PORT=3000;
 app.use(cors())
 app.use(bodyParser.json())
 app.use("/apiUser",userRoutes)
-mongoose.connect("process.env.MONGODB")
+mongoose.connect(process.env.MONGODB)
 .then(()=>{
     console.log("Connected to MongoDB")
     app.listen(process.env.PORT,()=>{
